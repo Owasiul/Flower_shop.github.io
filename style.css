@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", serif;
 }
 .container {
   margin: 0 auto;
@@ -75,6 +76,8 @@
   color: #b3aaac;
 }
 /* featured-heading end */
+
+/* featured box */
 .box {
   margin-top: 50px;
   width: 100%;
@@ -92,7 +95,9 @@
   transition: transform 0.3s ease;
 }
 
-.bg1, .bg2, .bg3 {
+.bg1,
+.bg2,
+.bg3 {
   position: relative;
   display: flex;
   justify-content: center;
@@ -103,9 +108,15 @@
   overflow: hidden;
 }
 
-.bg1 { background-color: #f2dee8; }
-.bg2 { background-color: #d9eff0; }
-.bg3 { background-color: #e3ebdb; }
+.bg1 {
+  background-color: #f2dee8;
+}
+.bg2 {
+  background-color: #d9eff0;
+}
+.bg3 {
+  background-color: #e3ebdb;
+}
 
 .overlay {
   position: absolute;
@@ -138,7 +149,7 @@
   color: rgb(253, 123, 166);
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   text-align: center;
 }
 
@@ -146,4 +157,176 @@
   color: rgb(253, 123, 166);
   text-align: center;
   padding: 0 16px;
+}
+/* featured box end */
+
+/* Service box start  */
+.s-box {
+  margin-top: 30px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  color: #272727;
+  border-radius: 10px;
+}
+
+/* service box end */
+.Sales {
+  background-color: #fdf6f8;
+  margin-top: 40px;
+}
+.discount {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.sales-text {
+  width: 50%;
+  color: #272727;
+}
+.sales-text h2 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.sales-text p {
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+.sales-text span {
+  color: #e55473;
+}
+.sales-text button{
+  background-color: #e55473;
+  border: none;
+  padding: 15px 30px;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sales-text button:hover{
+  background-color: #da1742;
+  transition: 1.5s ease;
+}
+/* sales sec end */
+
+/* media sec start */
+
+.media {
+  margin-top: 40px;
+}
+/* heading sec */
+.media-heading {
+  text-align: center;
+  color: #272727;
+  margin-bottom: 30px;
+}
+.media-heading h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.media-heading p {
+  font-size: 18px;
+  width: 60%;
+  margin: 0 auto;
+}
+/* img sec */
+.media-img {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.media-img img {
+  width: 100%;
+  box-shadow: 0px 5px 12px rgba(10, 30, 0, 0.3);
+}
+/* media sec end */
+
+/* Latest Deals */
+.Latest-Deals {
+  margin-top: 50px;
+}
+.deals-background {
+  background-image: url('/Asscet/Rectangle 9.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0;
+  border-radius: 10px;
+}
+.latest-deals-heading {
+  text-align: center;
+}
+.latest-deals-heading h2 {
+  font-size: 40px;
+  color: #272727;
+  margin-bottom: 10px;
+}
+.latest-deals-heading p{
+  font-size: 20px;
+  color: #272727;
+  margin-bottom: 50px;
+}
+.latest-deals-heading .subscribe input{
+  padding: 15px 250px;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+}
+.subscribe button{
+  margin-left: 10px;
+  background-color: #e55473;
+  border: none;
+  padding: 17px 30px;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.subscribe button:hover{
+  background-color: #da1742;
+  transition: 1.5s ease;
+}
+/* media sec end*/
+
+/* footer start */
+footer {
+  margin-top: 60px;
+  height: 70dvh;
+  background-color: #111010;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+footer h2 {
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+footer span {
+  color: #e55473;
+}
+footer p.describe  {
+ text-align: center;
+  color: #fff;
+  font-size: 18px;
+  width: 55%;
+  margin: 0 auto;
+}
+footer p.copy-right{
+  margin-top: 10px;
+  color: #616060;
 }
